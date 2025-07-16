@@ -1,0 +1,77 @@
+@import '@Scss/abstract/_placeholder.scss';
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-page {
+    @extend %scrollbar;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    color: #A3AED1;
+}
+
+.single-content {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+}
+
+.text-line {
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.text-bold {
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.text-light {
+    color: var(--color-text);
+    font-weight: 300;
+}
+
+.datetime {
+    color: var(--color-text);
+    font-weight: 300;
+    font-size: 14px;
+}

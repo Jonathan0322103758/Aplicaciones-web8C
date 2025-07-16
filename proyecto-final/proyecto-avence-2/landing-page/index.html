@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- METADATOS Y CONFIGURACIÓN -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QubeFlex - Soluciones de Software Innovadoras</title>
+  <meta name="description" content="Desarrollamos soluciones de software innovadoras que optimizan la eficiencia y funcionalidad de tus procesos">
+  
+  <!-- RECURSOS EXTERNOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <!-- ELEMENTOS DE DISEÑO -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  <div id="particles-js"></div>
+
+  <!-- ENCABEZADO MEJORADO -->
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo-container">
+          <a href="#hero">
+            <span class="logo-text">QubeFlex</span>
+          </a>
+        </div>
+
+        <!-- Menú de navegación -->
+        <div class="nav-links">
+          <a href="#hero" class="nav-link active">
+            <span>Inicio</span>
+            <span class="nav-indicator"></span>
+          </a>
+          <a href="#about" class="nav-link">
+            <span>Nosotros</span>
+            <span class="nav-indicator"></span>
+          </a>
+          <a href="#values" class="nav-link">
+            <span>Valores</span>
+            <span class="nav-indicator"></span>
+          </a>
+          <a href="#mission" class="nav-link">
+            <span>Misión/Visión</span>
+            <span class="nav-indicator"></span>
+          </a>
+          <a href="#contact" class="nav-link">
+            <span>Contacto</span>
+            <span class="nav-indicator"></span>
+          </a>
+        </div>
+
+        <!-- Botón de contacto -->
+        <button class="cta-button nav-contact-btn" onclick="window.location.href = '#contact'">
+          Contáctanos
+        </button>
+
+        <!-- Botón móvil -->
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO/PRINCIPAL -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Transformando Procesos con 
+            <span class="text-gradient">Software Innovador</span>
+          </h1>
+          <p class="hero-subtitle">
+            Desarrollamos soluciones tecnológicas que optimizan la eficiencia y funcionalidad de tus procesos mediante tecnología moderna y accesible.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="cta1-button styled-btn" onclick="window.location.href = '#mission'">Conoce más</button>
+            <button class="secondary-button styled-btn" onclick="window.location.href = '#contact'">Contáctanos</button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="50">0</span>+
+              <span class="stat-label">Proyectos completados</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="30">0</span>+
+              <span class="stat-label">Clientes satisfechos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="15">0</span>+
+              <span class="stat-label">Soluciones únicas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/img/logofinal.png" alt="Software QubeFlex" class="qubeflex-avatar">
+          <div class="floating-elements"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="x-container">
+      <div class="banda banda-1">
+        <div class="reflejo"></div>
+        <div class="scroll-content">
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+        </div>
+      </div>
+      <div class="banda banda-2">
+        <div class="reflejo"></div>
+        <div class="scroll-content">
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+          <div class="qubeflex-item">QUBEFLEX</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN NOSOTROS -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">
+        ¿Qué <span class="text-gradient">hacemos</span>?
+      </h2>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p class="highlight-text">
+            Somos especialistas en crear soluciones digitales a medida, diseñadas para optimizar procesos y potenciar el crecimiento de tu negocio.
+          </p>
+          
+          <div class="about-feature">
+            <div class="feature-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Innovación constante</h3>
+              <p>Utilizamos las últimas tecnologías para ofrecer productos vanguardistas que se adaptan a las necesidades del mercado actual.</p>
+            </div>
+          </div>
+          
+          <div class="about-feature">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Enfoque centrado</h3>
+              <p>Nos apasiona crear experiencias digitales intuitivas que resuelvan problemas reales de nuestros clientes.</p>
+            </div>
+          </div>
+          
+          <div class="about-feature">
+            <div class="feature-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Resultados rápidos</h3>
+              <p>Metodologías ágiles que garantizan entregas oportunas sin comprometer la calidad del producto final.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Equipo de trabajo" class="about-img">
+          <div class="experience-badge">
+            <span class="years">100%</span>
+            <span class="text">Clientes satisfechos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS MEJORADA -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <h2 class="services-title">
+        Nuestros <span class="text-gradient">Servicios</span>
+      </h2>
+      
+      <div class="services-grid">
+        <!-- Tarjetas de servicios -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="service-title">Desarrollo de Software Personalizado</h3>
+          <p class="service-description">
+            Soluciones a medida diseñadas específicamente para las necesidades únicas de tu negocio.
+          </p>
+          <a href="#contact" class="service-link">
+            Saber más <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="service-title">Aplicaciones Móviles</h3>
+          <p class="service-description">
+            Desarrollo de aplicaciones nativas e híbridas para iOS y Android que impulsan tu negocio.
+          </p>
+          <a href="#contact" class="service-link">
+            Saber más <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="service-title">Soluciones en la Nube</h3>
+          <p class="service-description">
+            Implementación de sistemas escalables y seguros en la nube para mayor flexibilidad.
+          </p>
+          <a href="#contact" class="service-link">
+            Saber más <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="service-title">Automatización de Procesos</h3>
+          <p class="service-description">
+            Optimización de tus flujos de trabajo mediante la automatización inteligente.
+          </p>
+          <a href="#contact" class="service-link">
+            Saber más <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN VALORES -->
+  <section class="values-section" id="values">
+    <div class="container">
+      <h2 class="values-section-title">
+        Nuestros <span class="text-gradient">Valores</span>
+      </h2>
+
+      <div class="values-grid">
+        <!-- Valor 1 -->
+        <div class="value-card">
+          <div class="value-icon-container">
+            <i class="fas fa-lightbulb value-icon"></i>
+          </div>
+          <h3 class="value-title">Innovación</h3>
+          <p class="value-description">Buscamos constantemente nuevas formas de mejorar lo existente mediante soluciones creativas y efectivas.</p>
+        </div>
+
+        <!-- Valor 2 -->
+        <div class="value-card">
+          <div class="value-icon-container">
+            <i class="fas fa-handshake value-icon"></i>
+          </div>
+          <h3 class="value-title">Compromiso</h3>
+          <p class="value-description">Nos involucramos con pasión en cada proyecto, cumpliendo con nuestros objetivos y tiempos de entrega.</p>
+        </div>
+
+        <!-- Valor 3 -->
+        <div class="value-card">
+          <div class="value-icon-container">
+            <i class="fas fa-award value-icon"></i>
+          </div>
+          <h3 class="value-title">Calidad</h3>
+          <p class="value-description">Garantizamos productos funcionales, estables y con alto valor agregado.</p>
+        </div>
+        
+        <!-- Valor 4 -->
+        <div class="value-card">
+          <div class="value-icon-container">
+            <i class="fas fa-users value-icon"></i>
+          </div>
+          <h3 class="value-title">Trabajo en equipo</h3>
+          <p class="value-description">Valoramos la colaboración y el respeto entre los miembros del equipo para lograr los mejores resultados.</p>
+        </div>
+
+        <!-- Valor 5 -->
+        <div class="value-card">
+          <div class="value-icon-container">
+            <i class="fas fa-balance-scale value-icon"></i>
+          </div>
+          <h3 class="value-title">Responsabilidad</h3>
+          <p class="value-description">Actuamos con ética y profesionalismo en cada etapa del desarrollo del software.</p>
+        </div>
+
+        <!-- Valor 6 -->
+        <div class="value-card">
+          <div class="value-icon-container">
+            <i class="fas fa-heart value-icon"></i>
+          </div>
+          <h3 class="value-title">Pasión</h3>
+          <p class="value-description">Amamos lo que hacemos y eso se refleja en la calidad de nuestro trabajo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN MISIÓN/VISIÓN -->
+  <section class="mission-vision" id="mission">
+    <div class="container">
+      <h2 class="values-section-title">
+        Misión <span class="text-gradient">y Visión</span>
+      </h2>
+
+      <div class="mission-vision-content">
+        <!-- Tarjeta Misión -->
+        <div class="mission-card">
+          <div class="card-content">
+            <div class="icon-container">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h2 class="section-title">MISIÓN</h2>
+            <p>
+              Desarrollar soluciones de software innovadoras que transformen procesos, optimizando su eficiencia y funcionalidad mediante tecnología moderna y accesible.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tarjeta Visión -->
+        <div class="vision-card">
+          <div class="card-content">
+            <div class="icon-container">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h2 class="section-title">VISIÓN</h2>
+            <p>
+              Ser una empresa líder en la modernización de procesos a través del desarrollo de software inteligente y adaptable, reconocida por nuestra excelencia técnica y compromiso con el éxito de nuestros clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN TESTIMONIOS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">
+        Lo que dicen <span class="text-gradient">nuestros clientes</span>
+      </h2>
+      
+      <div class="testimonials-slider">
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">
+            "QubeFlex transformó completamente nuestros procesos internos. Su software personalizado nos ha permitido ahorrar más de 30 horas de trabajo semanal."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 1">
+            <div>
+              <h4>Carlos Méndez</h4>
+              <p>Director de Operaciones, TechCorp</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">
+            "El equipo de QubeFlex entendió perfectamente nuestras necesidades y desarrolló una solución que superó nuestras expectativas. Excelente servicio post-venta."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente 2">
+            <div>
+              <h4>Ana Rodríguez</h4>
+              <p>Gerente General, FinanSys</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">
+            "Trabajar con QubeFlex ha sido una de las mejores decisiones para nuestro negocio. Su aplicación móvil ha aumentado nuestra productividad en un 40%."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente 3">
+            <div>
+              <h4>Javier López</h4>
+              <p>CEO, LogiTrack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contáctanos</h2>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>
+            <i class="fas fa-info-circle point-icon"></i>
+            Información de Contacto
+          </h3>
+          
+          <div class="contact-method">
+            <i class="fas fa-envelope point-icon"></i>
+            <div>
+              <h4>Correo Electrónico</h4>
+              <p><a href="mailto:info@qubeflex.com">info@qubeflex.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <i class="fas fa-phone point-icon"></i>
+            <div>
+              <h4>Teléfono</h4>
+              <p><a href="tel:+526641234567">+52 664 123 4567</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <i class="fas fa-map-marker-alt point-icon"></i>
+            <div>
+              <h4>Oficinas</h4>
+              <p>
+                Carretera Libre Tijuana-Tecate Km 10<br>
+                Fracc. El Refugio<br>
+                22253 Tijuana, B.C.
+              </p>
+            </div>
+          </div>
+          
+          <div class="contact-social">
+            <h4>Síguenos</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Nombre Completo *</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+              <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+              <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Teléfono</label>
+              <input type="tel" id="phone" name="phone" class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="company" class="form-label">Empresa</label>
+              <input type="text" id="company" name="company" class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="service" class="form-label">Servicio de interés</label>
+              <select id="service" name="service" class="form-input">
+                <option value="">Selecciona una opción</option>
+                <option value="desarrollo">Desarrollo de Software</option>
+                <option value="movil">Aplicaciones Móviles</option>
+                <option value="nube">Soluciones en la Nube</option>
+                <option value="automatizacion">Automatización</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Mensaje *</label>
+              <textarea id="message" name="message" class="form-input" required rows="5"></textarea>
+              <span class="error-message"></span>
+            </div>
+            
+            <button type="submit" class="cta-button submit-btn">
+              <span class="btn-text">Enviar Mensaje</span>
+              <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CTA -->
+  <section class="cta-section">
+    <!-- Elementos decorativos -->
+    <div class="decorative-circle top-right"></div>
+    <div class="decorative-circle bottom-left"></div>
+    
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">
+          ¿Listo para Transformar tus Procesos?
+        </h2>
+        <p class="cta-subtitle">
+          Contáctanos para descubrir cómo QubeFlex puede ayudarte a optimizar tus operaciones con soluciones de software innovadoras.
+        </p>
+        <div class="cta-buttons">
+          <button class="cta-button cta-main-btn" onclick="window.location.href = '#contact'">
+            <span>Contactar ahora</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <button class="cta-button cta-secondary-btn" onclick="window.location.href = 'tel:+526641234567'">
+            <span>Llamar ahora</span>
+            <i class="fas fa-phone"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <!-- Columna 1: Acerca de -->
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <span class="footer-logo-text">QubeFlex</span>
+          </a>
+          <p class="footer-description">
+            Soluciones de software innovadoras para transformar tus procesos y llevar tu negocio al siguiente nivel.
+          </p>
+          <div class="footer-newsletter">
+            <h4>Suscríbete a nuestro boletín</h4>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Tu correo electrónico" required>
+              <button type="submit" aria-label="Enviar boletín">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Columna 2: Empresa -->
+        <div class="footer-links">
+          <h3>Empresa</h3>
+          <ul>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#values">Valores</a></li>
+            <li><a href="#mission">Misión/Visión</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#">Carreras</a></li>
+          </ul>
+        </div>
+        
+        <!-- Columna 3: Servicios -->
+        <div class="footer-links">
+          <h3>Servicios</h3>
+          <ul>
+            <li><a href="#">Desarrollo de Software</a></li>
+            <li><a href="#">Aplicaciones Móviles</a></li>
+            <li><a href="#">Soluciones en la Nube</a></li>
+            <li><a href="#">Automatización</a></li>
+            <li><a href="#">Consultoría TI</a></li>
+          </ul>
+        </div>
+        
+        <!-- Columna 4: Recursos -->
+        <div class="footer-links">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Casos de éxito</a></li>
+            <li><a href="#">Documentación</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Soporte</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Footer inferior -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 QubeFlex. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Términos de servicio</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="/assets/js/functions.js"></script>
+</body>
+</html>

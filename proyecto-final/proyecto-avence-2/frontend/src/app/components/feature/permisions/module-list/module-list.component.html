@@ -1,0 +1,13 @@
+@if(modules$ | async){
+    <div class="flex-column">
+    @for(module of modules(); track module._id) {
+        <qx-module-card [module]="module"/>
+    }
+</div>
+}
+
+@if(modules().length === 0) {
+    <div class="flex-center">
+        <qx-info info="No hay módulos disponible"/>
+    </div>
+}
