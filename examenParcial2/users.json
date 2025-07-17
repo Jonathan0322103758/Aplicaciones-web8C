@@ -1,0 +1,62 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "Terminar reporte de productividad",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "Actualizar base de datos de usuarios",
+    "completed": true
+  },
+  {
+    "userId": 2,
+    "id": 3,
+    "title": "Diseñar interfaz para nueva app",
+    "completed": false
+  },
+  {
+    "userId": 2,
+    "id": 4,
+    "title": "Enviar cotización a cliente",
+    "completed": true
+  },
+  {
+    "userId": 3,
+    "id": 5,
+    "title": "Revisar errores del backend",
+    "completed": false
+  },
+  {
+    "userId": 3,
+    "id": 6,
+    "title": "Implementar sistema de login",
+    "completed": true
+  },
+  {
+    "userId": 4,
+    "id": 7,
+    "title": "Pruebas de rendimiento del sistema",
+    "completed": true
+  },
+  {
+    "userId": 4,
+    "id": 8,
+    "title": "Publicar nueva versión del API",
+    "completed": false
+  },
+  {
+    "userId": 5,
+    "id": 9,
+    "title": "Documentar endpoints del API",
+    "completed": true
+  },
+  {
+    "userId": 5,
+    "id": 10,
+    "title": "Realizar copia de seguridad",
+    "completed": false
+  }
+]

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parra’s Dev | Lista de Pendientes</title>
+  <style>
+
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background: #f4f4f4;
+      color: #333;
+      width: 500px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 1.5rem;
+    }
+
+    details {
+      margin-bottom: 1rem;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    summary {
+      background: #4e5e74;
+      color: #fff;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    summary::marker {
+      color: #fff;
+    }
+
+    ul {
+      padding: 1rem;
+      list-style: none;
+      margin: 0;
+    }
+
+    li {
+      background: #f9f9f9;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-left: 5px solid #3498db;
+    }
+  </style>
+</head>
+<body>
+  <h1>Panel de Pendientes - Parra’s Dev</h1>
+
+  <details>
+    <summary>1. Todos los Pendientes (IDs)</summary>
+    <ul id="todos-ids"></ul>
+  </details>
+
+  <details>
+    <summary>2. Todos los Pendientes (IDs y Títulos)</summary>
+    <ul id="todos-id-title"></ul>
+  </details>
+
+  <details>
+    <summary>3. Pendientes sin Resolver (ID y Título)</summary>
+    <ul id="pendientes-sin-resolver"></ul>
+  </details>
+
+  <details>
+    <summary>4. Pendientes Resueltos (ID y Título)</summary>
+    <ul id="pendientes-resueltos"></ul>
+  </details>
+
+  <details>
+    <summary>5. Todos los Pendientes (IDs y userID)</summary>
+    <ul id="todos-id-user"></ul>
+  </details>
+
+  <details>
+    <summary>6. Pendientes Resueltos (ID y userID)</summary>
+    <ul id="resueltos-id-user"></ul>
+  </details>
+
+  <details>
+    <summary>7. Pendientes sin Resolver (ID y userID)</summary>
+    <ul id="sin-resolver-id-user"></ul>
+  </details>
+
+  <script>
+  const API_URL = "users.json";
+  async function cargarPendientes() {
+    try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+
+      const todosIds = document.getElementById("todos-ids");
+      const todosIdTitle = document.getElementById("todos-id-title");
+      const pendientesSinResolver = document.getElementById("pendientes-sin-resolver");
+      const pendientesResueltos = document.getElementById("pendientes-resueltos");
+      const todosIdUser = document.getElementById("todos-id-user");
+      const resueltosIdUser = document.getElementById("resueltos-id-user");
+      const sinResolverIdUser = document.getElementById("sin-resolver-id-user");
+
+      data.forEach(p => {
+        todosIds.innerHTML += `<li><strong>ID:</strong> ${p.id}</li>`;
+
+        todosIdTitle.innerHTML += `<li><strong>ID:</strong> ${p.id}, <strong>Título:</strong> ${p.title}</li>`;
+
+        if (!p.completed) {
+          pendientesSinResolver.innerHTML += `<li><strong>ID:</strong> ${p.id}, <strong>Título:</strong> ${p.title}</li>`;
+          sinResolverIdUser.innerHTML += `<li><strong>ID:</strong> ${p.id}, <strong>userID:</strong> ${p.userId}</li>`;
+        }
+
+        if (p.completed) {
+          pendientesResueltos.innerHTML += `<li><strong>ID:</strong> ${p.id}, <strong>Título:</strong> ${p.title}</li>`;
+          resueltosIdUser.innerHTML += `<li><strong>ID:</strong> ${p.id}, <strong>userID:</strong> ${p.userId}</li>`;
+        }
+
+        todosIdUser.innerHTML += `<li><strong>ID:</strong> ${p.id}, <strong>userID:</strong> ${p.userId}</li>`;
+      });
+
+    } catch (error) {
+      console.error("Error al cargar pendientes:", error);
+    }
+  }
+
+  cargarPendientes();
+</script>
+</body>
+</html>
